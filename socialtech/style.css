@@ -1,4 +1,4 @@
-/* PC、スマホ共通スタイル */
+* PC、スマホ共通スタイル */
 /* Estilo común para PC y smartphone */
 body {
     font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
@@ -8,44 +8,7 @@ p {
     font-size: 15px;
   }
   
-  /*================ PC用のスタイル - Estilo para PC =================*/
-  @media screen and (min-width: 768px) {
-    /* 横幅設定 */
-    body {
-      max-width: 1080px;
-      min-width: 960px;
-      margin: 0 auto 0 auto;
-    }
-
-    /* ヘッダー */
-    header {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    /* スマホ用ナビを非表示 */
-    /* Ocultar navegación del teléfono inteligente */
-   #nav-sp,
-   #menu-sp {
-     display: none;
-   }
-
-  /*======== 中略 ========*/
-
-    #sns-footer {
-      text-align: left;
-      width: 100%;
-    }
-    
-    #sns-footer > a {
-      margin-right: 30px;
-    }
-
-    #copyright {
-      color: #ffffff;
-      float: right;
-    }
-  }
+  
 
 /*==================== スマートフォン用のスタイル - Estilo para teléfonos inteligentes =====================*/
   @media screen and (max-width: 767px) {
@@ -264,6 +227,28 @@ p {
 
 
 
+
+/*================ PC用のスタイル - Estilo para PC =================*/
+@media screen and (min-width: 768px) {
+  /* 横幅設定 */
+  body {
+    max-width: 1080px;
+    min-width: 960px;
+    margin: 0 auto 0 auto;
+  }
+
+  /* ヘッダー */
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* スマホ用ナビを非表示 */
+  /* Ocultar navegación del teléfono inteligente */
+ #nav-sp,
+ #menu-sp {
+   display: none;
+ }
 
 
 
@@ -815,4 +800,6 @@ details > div > span {
 #copyright {
   color: #ffffff;
   float: right;
+}
+
 }
